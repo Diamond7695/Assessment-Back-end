@@ -6,7 +6,19 @@ document.getElementById("complimentButton").onclick = function () {
         });
   };
 
-
+  document.getElementById("compliments2").onclick = function () {
+    axios.get("http://localhost:4000/api/compliments/")
+        .then(function (response) {
+          const data = response.data;
+          alert(data);
+        });
+        document.getElementById("awesomeButton").onclick = function () {
+          axios.get("http://localhost:4000/api/awesome/")
+              .then(function (response) {
+                const data = response.data;
+                alert(data);
+              });
+  };
 
 document.getElementById("furtunesButton").onclick = function () {
 axios.get("http://localhost:4000/api/furtune")
@@ -27,4 +39,4 @@ const  show_date =() => {
   }
 
 
-
+  }

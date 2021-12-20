@@ -28,6 +28,30 @@ module.exports ={
         res.status(200).send(randomFort);
     
     },
+    compliments2:(req,res)=> {
+        let compliments22=[
+            //list of the furtunes 
+            "You have impeccable manners.",
+            "I like your style."
+        ];
+        //Picking a random fortune
+        let random = Math.floor(Math.random() * compliments22.length);
+        let randomFort22 = compliments22[random];
+        res.status(200).send(randomFort22);
+    
+    },
+    awesomeOne:(req,res)=> {
+        let awesomes=[
+            //list of the furtunes 
+            "Because you have style",
+            "Because you have good energy!"
+        ];
+        //Picking a random fortune
+        let random = Math.floor(Math.random() * awesomes.length);
+        let randomFort222 = awesomes[random];
+        res.status(200).send(randomFort222);
+    
+    },
 
 
     show: (req,res)=>{

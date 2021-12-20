@@ -19,12 +19,8 @@ app.get("/api/compliment", (req, res) => {
 
 app.get("/api/compliment", controller.niceCompliment);
 app.get("/api/furtune",controller.theFurtune);
-///create a post
-
-app.post("/api/show", controller.show);
-//delete
-
-app.delete("/api/show/:id", controller.deleteInfo);
+app.get("/api/compliments", controller.compliments2)
+app.get("/api/awesome",controller.awesomeOne)
 
 
 
