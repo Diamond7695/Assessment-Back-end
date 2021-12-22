@@ -11,7 +11,9 @@ document.getElementById("complimentButton").onclick = function () {
         .then(function (response) {
           const data = response.data;
           alert(data);
+
         });
+      }
         document.getElementById("awesomeButton").onclick = function () {
           axios.get("http://localhost:4000/api/awesome/")
               .then(function (response) {
@@ -39,4 +41,7 @@ const  show_date =() => {
   }
 
 
+  const deleteFortune = ()=>{
+    console.log("hit")
+    axios.delete("http://localhost:4000/api/fortune").then(res=>console.log(res.data))
   }

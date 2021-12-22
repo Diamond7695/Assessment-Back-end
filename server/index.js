@@ -21,6 +21,7 @@ app.get("/api/compliment", controller.niceCompliment);
 app.get("/api/furtune",controller.theFurtune);
 app.get("/api/compliments", controller.compliments2)
 app.get("/api/awesome",controller.awesomeOne)
+app.delete("/api/fortune", controller.deleteInfo)
 
 
 
